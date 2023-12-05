@@ -1,0 +1,33 @@
+<%-include('../include/head.ejs')%>
+</head>
+
+<body>
+    <%-include('../include/navigation.ejs')%>
+   
+     <main class="products-details-main">
+      <div class="product-details-img">
+         <img src="/<%=product.imageUrl%>" alt="<%=product.title%>">
+
+      </div>
+      <div class="products-details">
+
+        <div class="pt"> <h1><%=product.title%></h1></div>
+         <hr>
+         
+            <div class="pt"> <span ><h2>Price</h2></span><span>$<%=product.price%></span></div>
+           <div class="pt"><span><h2>Product-Info</h2></span> <span> <p><%=product.description%></p></span></div>
+           
+           <div class="product-details-btn">
+            <% if(isAuthenticated){%>
+
+               <%- include('../include/add-to-cart.ejs',{product:product})%>
+                 <%}%>
+          </div>
+      </div>
+          
+      
+
+
+     </main>
+</body>
+<%-include('../include/end.ejs')%>

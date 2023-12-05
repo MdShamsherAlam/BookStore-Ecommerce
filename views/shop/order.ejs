@@ -1,0 +1,29 @@
+<%-include('../include/head.ejs')%>
+</head>
+
+<body>
+  <%-include('../include/navigation.ejs')%>
+  <% if (orders.length <= 0) { %>
+  <main class="main-container">
+    <h1>Nothing there</h1>
+  </main>
+  <% } else { %>
+  <ul class="order-list">
+    <% orders.forEach(order => { %>
+    <li class="order">
+      <h1>Order- #<%= order.id %> - <a href="/orders/<%=order.id%>">Invoice</a></h1>
+      <ul class="product-list">
+        <% order.products.forEach(p => { %>
+        <li class="product">
+          <span class="product-title"><%= p.product.title %></span> (<span class="product-quantity"><%= p.quantity %></span>)
+        </li>
+        <% }) %>
+      </ul>
+    </li>
+    <% }) %>
+  </ul>
+  <% } %>
+</body>
+<%-include('../include/end.ejs')%>
+
+

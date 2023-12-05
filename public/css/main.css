@@ -1,0 +1,441 @@
+
+.main-header{
+  width:100%;
+  height:3.5rem;
+  background-color: rgb(231, 175, 64);
+  padding:0 1.5rem;
+}
+.main-header_nav{
+
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-header_nav_items{
+    margin:0;
+    padding:0;
+    display: flex;
+    list-style: none;
+}
+.main-header_item a{
+    text-decoration: none;
+    color:white;
+    margin: 0 1rem;
+    padding:0;
+}
+.main-header_item a:hover,
+.main-header_item a:active,
+.main-header_item a.active {
+    color:rgb(64, 64, 232)
+}
+.main-section{
+    padding:1.5rem;
+}
+
+
+
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply a background color to the whole page */
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the grid container */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Style each product card */
+  .card.product-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+
+  }
+  
+  /* Style the product title */
+  .product__title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Style the product image */
+  .card__image img {
+    max-width: 100%;
+    height: 300px;
+
+  }
+  
+  /* Style the product price */
+  .product__price {
+    font-size: 1.2em;
+    color: #f26722;
+    margin: 10px 0;
+  }
+  
+  /* Style the product description */
+  .product__description {
+    color: #666;
+    margin: 10px 0;
+  }
+  .card__actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card__actions .btn{
+    background-color: #f26722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-left: 3px;
+    
+  }
+  .card__actions .btn:hover{
+    background-color: green;
+
+  }
+  
+  /* Style the Add to Cart button */
+  .card__actions button.btn {
+    background-color: #f26722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .card__actions button.btn:hover {
+    background-color: green;
+  }
+  
+  .card__action_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  
+  .card__action_btn button{
+   
+    color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+    border-color: green;
+  }
+
+  .card__action_btn button:hover{
+    background-color: rgb(237, 35, 35) ;
+    color:white;
+    border:none;
+  }
+  .card__action_btn .btn{
+      
+    color: green;
+    margin-right: 2px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+  
+    text-decoration: none;
+    border: 1px solid green ;
+
+
+  }
+ 
+
+  .card__action_btn .btn:hover{
+    background-color: rgb(237, 35, 35) ;
+    color:white;
+    border:none;
+  }
+
+
+.products-details-main{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5rem;
+
+}
+
+.product-details-img{
+  width:25rem;
+}
+.product-details-img img{
+  width:100%;
+
+}
+.products-details{
+  width: 25rem;
+  align-items: center;
+}
+.pt{
+  margin: 20px;
+  
+}
+.product-details-btn{
+  margin-left: 15px;
+}
+
+.product-details-btn button{
+  color: green;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: bolder;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: background-color 0.3s;
+  border-color: green;
+}
+
+.product-details-btn button:hover{
+  background-color: rgb(237, 35, 35) ;
+  color:white;
+  border:none;
+
+}
+
+
+
+/* Reset some default styles to ensure consistency */
+body, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style the main container */
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the list of products */
+.cartStyling ul {
+  list-style: none;
+}
+
+.cartStyling li {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the product title and quantity */
+.cartStyling p {
+  font-size: 18px;
+}
+
+/* Style the delete button */
+.cartStyling form {
+  display: inline;
+}
+
+.cartStyling button.btn {
+  background-color: #ff5733;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cartStyling button.btn:hover {
+  background-color: #ff8c66;
+}
+
+/* Style the "Order Now" button */
+.cartStyling button.order-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cartStyling button.order-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style the "No Products in Cart" message */
+ .cartStyling h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* ---------------------for Order------------- */
+
+
+/* Apply styles to the main container */
+.main-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Style the h1 element when there are no orders */
+.main-container h1 {
+  text-align: center;
+  color: #555;
+}
+
+/* Style the list container */
+.order-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style individual orders */
+.order {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Style the order ID */
+.order h1 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+/* Style the product list within an order */
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Style individual products in the list */
+.product {
+  margin: 5px 0;
+  color: #777;
+}
+
+/* Style the product title */
+.product-title {
+  font-weight: bold;
+}
+
+/* Style the quantity */
+.product-quantity {
+  color: #333;
+}
+
+
+
+/* ----------------------for login_page--------------- */
+
+.main-section-login {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+
+}
+.main-container{
+  width:25rem;
+  height:21rem;
+}
+
+.main-section-login button {
+  background-color: #f26722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 5px;
+}
+
+.main-section-login button:hover{
+  background-color: green;
+}
+
+#logout{
+  border:none;
+  background-color: transparent;
+  color:White;
+  font-size: 15px;
+}
+#logout:hover{
+  cursor:pointer;
+  color:#0056b3;
+}
+
+/* Apply some basic styles */
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  border: 1px solid orange;
+  border-radius: 3px;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.pagination a.active,
+.pagination a.active {
+  background-color: black;
+  color: #fff;
+}
+
